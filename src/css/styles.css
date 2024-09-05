@@ -1,9 +1,24 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item {
+  flex-basis: calc(33.333% - 16px);
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
